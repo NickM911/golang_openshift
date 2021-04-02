@@ -27,7 +27,7 @@ import (
 	http.HandleFunc("/" , func(w http.ResponseWriter, r *http.Request) {
  
 	   //If errors show an internal server error message
-	   if err := templates.ExecuteTemplate(w, "index.html", nil); err != nil {
+	   if err := templates.ExecuteTemplate(w, "homepage.html", nil); err != nil {
 		  http.Error(w, err.Error(), http.StatusInternalServerError)
 	   }
 	})

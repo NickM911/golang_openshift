@@ -2,7 +2,7 @@ package main
 import (
 	"net/http"
 	"fmt"
-	"html/index"
+	"html/template"
  )
  
  func main() {
